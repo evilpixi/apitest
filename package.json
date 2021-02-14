@@ -1,0 +1,27 @@
+{
+  "name": "apitest",
+  "version": "1.0.0",
+  "description": "simple package to test restful api calls",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evilpixi/apitest.git"
+  },
+  "keywords": [
+    "api",
+    "test",
+    "apitest",
+    "rest",
+    "restful",
+    "html"
+  ],
+  "author": "evilpixi",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/evilpixi/apitest/issues"
+  },
+  "homepage": "https://github.com/evilpixi/apitest#readme"
+}
