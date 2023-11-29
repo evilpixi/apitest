@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div id="navbar">
+  <div id="navbar" class="lightNavbar">
     REST API tester
 
     <span class="switch-container">
@@ -32,15 +32,15 @@
 
     <div class="formContainer">
       <div class="formLabel">http://</div>
-      <input type="text" class="formField" id="httpUrl" value="localhost:3000">
-      <img class="sendIcon" src="img/arrow.png" id="sendIcon">
+      <input type="text" class="formField formFieldLight" id="httpUrl" value="localhost:3000">
+      <img class="sendIcon sendIconLight" src="img/arrow.png" id="sendIcon">
     </div><br>
     <div class="formLabel">req.body:</div>
     <div class="formContainer">
-      <textarea type="text" class="formField" id="httpRequest" rows="10"></textarea>
+      <textarea type="text" class="formField formFieldLight" id="httpRequest" rows="10"></textarea>
     </div>
 
-    <pre id="responseZone"> << result zone >> </pre>
+    <pre id="responseZone" class="preLight"> << result zone >> </pre>
   </div>
 
   <script src="index.js"></script>

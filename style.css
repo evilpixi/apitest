@@ -15,8 +15,12 @@ body {
     overflow: hidden;
 }
 
+.modoOscuro {
+    background-color: rgb(38 31 48);
+    color: white;
+}
+
 #navbar {
-    background-color: orange;
     font-size: xx-large;
     padding: 12px;
     margin-bottom: 20px;
@@ -24,6 +28,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
+}
+
+.lightNavbar {
+    background-color: orange;
+}
+
+.darkNavbar {
+    background-color: #521075;
 }
 
 #appBody {
@@ -57,7 +69,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #ff5b00;
     transition: 0.4s;
     border-radius: 34px;
 }
@@ -69,21 +81,22 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(252, 199, 25);
     transition: 0.4s;
     border-radius: 50%;
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
+    background-color: #231647;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #231647;
 }
 
 input:checked+.slider:before {
     transform: translateX(26px);
+    background-color: white;
 }
 
 /*--- buttons ---*/
@@ -153,7 +166,6 @@ input:checked+.slider:before {
 
 .formField {
     width: 100%;
-    color: rgb(48, 48, 48);
     border: 1px solid gray;
     box-sizing: border-box;
     padding: 8px;
@@ -162,15 +174,32 @@ input:checked+.slider:before {
     margin-left: 4px;
 }
 
+.formFieldLight {
+    color: rgb(48, 48, 48);
+    background-color: #ffffff;
+}
+
+.formFieldDark {
+    color: white;
+    background-color: #382c3b;
+}
+
 .sendIcon {
     margin-left: 4px;
-    background-color: #dd841e;
     width: 28px;
     height: 28px;
     padding: 4px;
     border-radius: 4px;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.sendIconLight {
+    background-color: #dd841e;
+}
+
+.sendIconDark {
+    background-color: #521075;
 }
 
 .sendIcon:hover {
@@ -187,7 +216,15 @@ input:checked+.slider:before {
 }
 
 pre {
-    background-color: blanchedalmond;
     padding: 10px;
+}
+
+.preLight {
+    background-color: blanchedalmond;
     color: dimgrey;
+}
+
+.preDark {
+    background-color: black;
+    color: plum;
 }

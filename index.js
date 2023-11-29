@@ -1,3 +1,21 @@
+// dark mode
+const DarkmodeSwitch = document.getElementById("DarkmodeSwitch")
+
+DarkmodeSwitch.addEventListener("change", () => {
+    document.body.classList.toggle("modoOscuro")
+    navbar.classList.toggle("lightNavbar")
+    navbar.classList.toggle("darkNavbar")
+    sendIcon.classList.toggle("sendIconLight")
+    sendIcon.classList.toggle("sendIconDark")
+    responseZone.classList.toggle("preLight")
+    responseZone.classList.toggle("preDark")
+    let fields = Array.from(document.getElementsByClassName("formField"))
+    fields.forEach(element => {
+        element.classList.toggle("formFieldDark")
+    });
+})
+
+// API calls
 let retrieveRequest = () => {
     let req = {
         method: selectedMethod
