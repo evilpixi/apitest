@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APIREST Tester</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./img/arrow.png">
+</head>
+
+<body>
+  <div id="navbar">
+    REST API tester
+
+    <span class="switch-container">
+      <label class="switch">
+        <input type="checkbox" id="DarkmodeSwitch">
+        <span class="slider"></span>
+      </label>
+    </span>
+  </div>
+
+  <div id="appBody">
+    <div id="methodsContainer">
+      <div id="methodButtonGET" class="methodButton btnGet">GET</div>
+      <div id="methodButtonPOST" class="methodButton btnPost">POST</div>
+      <div id="methodButtonPUT" class="methodButton btnPut">PUT</div>
+      <div id="methodButtonDELETE" class="methodButton btnDelete">DELETE</div>
+    </div>
+
+    <div class="formContainer">
+      <div class="formLabel">http://</div>
+      <input type="text" class="formField" id="httpUrl" value="localhost:3000">
+      <img class="sendIcon" src="img/arrow.png" id="sendIcon">
+    </div><br>
+    <div class="formLabel">req.body:</div>
+    <div class="formContainer">
+      <textarea type="text" class="formField" id="httpRequest" rows="10"></textarea>
+    </div>
+
+    <pre id="responseZone"> << result zone >> </pre>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
